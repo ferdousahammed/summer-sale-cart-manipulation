@@ -41,6 +41,13 @@ document.getElementById("apply-btn").addEventListener("click", () => {
   }
 });
 
+function purchase() {
+  setInnerTextById("title-container", "");
+  setInnerTextById("discountPrice", 0);
+  setInnerTextById("total", 0);
+  setInnerTextById("totalPrice", 0);
+}
+
 function getInnerTextById(id) {
   return document.getElementById(id).innerText;
 }
